@@ -1,0 +1,20 @@
+<p>Profil List</p>
+
+<div *ngIf="profilDel != ''; else beforeDelete">
+    <h3>Perfil borrado: <small>{{profilDel}}</small></h3>
+</div>
+
+<ng-template #beforeDelete>
+    <h3>No se ha borrado nada</h3>
+</ng-template>
+
+<ul>
+    <li *ngFor="let profil of profiles; let i = index">
+        {{i}} - {{profil.nombre}} {{profil.apellidos}} <button (click)="deleteProfil(i)">
+            Delete
+        </button>
+    </li>
+</ul>
+
+
+

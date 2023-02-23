@@ -1,0 +1,22 @@
+<h1>Profil Component Works</h1>
+
+<dl>
+    <td>Nombre:</td>
+    <dd> {{nombre}}</dd>
+
+    <td>Edad:</td>
+    <dd> {{ edad }}</dd>
+
+    <td>Metodo</td>
+    <dd>{{ perfil() }}</dd>
+
+    <td>Nombre Capitalizado</td>
+    <dd>{{ nombreCapitalizado }}</dd>
+</dl>
+
+<button (click)="cambiarNombre()">
+    Cambiar perfil
+</button>
+<button>
+    Cambiar edad
+</button>
