@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ProfilesModule } from './profiles/profiles.module';
 import { ContadorModule } from './contador/contador.module';
+import { DbzModule } from './dbz/dbz.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ContadorModule } from './contador/contador.module';
     imports: [
         BrowserModule,
         ProfilesModule,
-        ContadorModule
+        ContadorModule,
+        DbzModule
     ]
 })
 export class AppModule { }
